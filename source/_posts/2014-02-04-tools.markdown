@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "我的工具箱!"
+date:   2014-02-04 16:06:09
+categories: tools
+---
+
+在这里整理自己用过的或者常用的一些工具。
+
+### 开发类
+- maven 做java开发，用maven做构建还是非常方便的，从11年开始接触maven，就被他吸引。
+- gradle
+- vagrant
+- vim 接触linux以来一直在用vim，将常用插件用bundle管理起来，放到git上，在新环境，更新，初始化一下即可，非常方便, 现在任何ide我都需要装上vim插件。
+	- [idea vim](http://ideavim.sourceforge.net/) 插件,可以插件管理中安装也可以直接下载安装
+	- [netbeans vim](http://jvi.sourceforge.net/) 插件
+	- Sublime Text 2 vim 模式
+	- eclipse vim ,eclipse的vim 插件比较难用
+
+### 设计与产品类
+
+- [sketch](/tools/2013/04/13/sketch.html) 是mac下的一款设计工具，用起来特别的方便，用来做设计和产品原型都非常合适
