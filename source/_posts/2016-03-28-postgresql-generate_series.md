@@ -19,7 +19,7 @@ FROM(
    order by offs
 ) d
 LEFT OUTER JOIN account a
-ON (d.date=to_char(date_trunc('month', a.created_time), 'YYYY-MM-DD'))  
+ON (d.date=to_char(date_trunc('month', a.created_time), 'YYYY-MM-DD'))
 GROUP BY d.date;
 
 ```

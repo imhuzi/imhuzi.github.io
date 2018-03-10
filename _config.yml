@@ -38,8 +38,8 @@ relative_link: false
 future: true
 highlight:
   enable: true
+  auto_detect: true
   line_number: true
-  auto_detect: false
   tab_replace:
 
 # Category & Tag
@@ -70,3 +70,11 @@ deploy:
   type: git
   repo: git@github.com:imhuzi/imhuzi.github.io.git
   branch: master
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 500
+  content_limit_delim: ' '

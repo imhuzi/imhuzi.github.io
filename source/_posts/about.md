@@ -1,6 +1,7 @@
 ---
-title: 新的开始，博客也要有新的开始
-categories: 关于博客
+layout: page
+title: I'm Huzi Blog
+categories: about
 ---
 
 我以前的踪迹： [网易博客-{‘coding’: ‘life’}](http://wanghuiwl320.blog.163.com/) ,[oschina博客](https://my.oschina.net/whxia320/)
