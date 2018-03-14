@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://imhuzi.net/"/>
-  <updated>2018-03-14T04:16:22.672Z</updated>
+  <updated>2018-03-14T06:09:31.015Z</updated>
   <id>http://imhuzi.net/</id>
   
   <author>
@@ -15,6 +15,49 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring boot Project deploy</title>
+    <link href="http://imhuzi.net/2018/03/14/Spring-boot-Project-deploy-1/"/>
+    <id>http://imhuzi.net/2018/03/14/Spring-boot-Project-deploy-1/</id>
+    <published>2018-03-14T06:09:30.000Z</published>
+    <updated>2018-03-14T06:09:31.015Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Spring boot Project deploy</title>
+    <link href="http://imhuzi.net/2018/03/14/Spring-boot-Project-deploy/"/>
+    <id>http://imhuzi.net/2018/03/14/Spring-boot-Project-deploy/</id>
+    <published>2018-03-14T04:36:37.000Z</published>
+    <updated>2018-03-14T06:08:00.744Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;通过在Vm参数中加: &lt;code&gt;-Dspring.profiles.active=dev&lt;/code&gt; 来指定当前环境的配置文件&lt;/p&gt;
+&lt;p&gt;idea 详细配置过程见 &lt;a href=&quot;docs/构建视频.mp4&quot;&gt;构建教程.mp4&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mvn clen install -Dspring.profiles.active=dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&quot;deploy&quot;&gt;&lt;a href=&quot;#deploy&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Spring boot" scheme="http://imhuzi.net/tags/Spring-boot/"/>
+    
+      <category term="deploy" scheme="http://imhuzi.net/tags/deploy/"/>
+    
+  </entry>
   
   <entry>
     <title>zsh Tips</title>
@@ -407,31 +450,6 @@
   </entry>
   
   <entry>
-    <title>mqtt资料整理</title>
-    <link href="http://imhuzi.net/2015/09/09/mqtt/"/>
-    <id>http://imhuzi.net/2015/09/09/mqtt/</id>
-    <published>2015-09-09T06:14:09.000Z</published>
-    <updated>2015-09-09T04:22:46.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;协议相关资料&quot;&gt;&lt;a href=&quot;#协议相关资料&quot; class=&quot;headerlink&quot; title=&quot;协议相关资料&quot;&gt;&lt;/a&gt;协议相关资料&lt;/h2&gt;&lt;h4 id=&quot;MQTT相关资源整合&quot;&gt;&lt;a href=&quot;#MQTT相关资源整合&quot; class=&quot;headerlink&quot; title=&quot;MQTT相关资源整合&quot;&gt;&lt;/a&gt;MQTT相关资源整合&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;https://laoyur.com/?p=295
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;MQTT协议&quot;&gt;&lt;a href=&quot;#MQTT协议&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="mqtt" scheme="http://imhuzi.net/categories/mqtt/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>移动开发需要的前端资源</title>
     <link href="http://imhuzi.net/2015/09/09/fd-app/"/>
     <id>http://imhuzi.net/2015/09/09/fd-app/</id>
@@ -493,11 +511,11 @@
   </entry>
   
   <entry>
-    <title>产品日志-产品文案很重要</title>
-    <link href="http://imhuzi.net/2015/09/08/work-note/"/>
-    <id>http://imhuzi.net/2015/09/08/work-note/</id>
-    <published>2015-09-08T06:14:09.000Z</published>
-    <updated>2015-09-08T07:51:43.000Z</updated>
+    <title>mqtt资料整理</title>
+    <link href="http://imhuzi.net/2015/09/09/mqtt/"/>
+    <id>http://imhuzi.net/2015/09/09/mqtt/</id>
+    <published>2015-09-09T06:14:09.000Z</published>
+    <updated>2015-09-09T04:22:46.000Z</updated>
     
     <summary type="html">
     
@@ -505,30 +523,14 @@
       
         
         
-          &lt;p&gt;&amp;nbsp;&amp;nbsp;这周主要的工作就是整理，产品文案，针对不同目标用户的ppt，以及市场宣传资料，市场宣传资料老板在8月份就提出了，但是迟迟没出，主要原因：1.身兼多职，产品，前端开发，后端事挺多，2.心静不下来。其实这些说起来和在脑子里想其实很简单，但是在把他们落实成文字确实需要些时间推敲。&lt;br&gt;&amp;nbsp;&amp;nbsp;其实在这个过程中也是让自己重新将公司的整个产品体系，进行梳理，发现问题的一个过程。市场宣传资料文案，和ppt其实和做一个产品一样，需要分析目标用户，结合用户的痛点，再把我们产品的特点结合进去。而且要清晰明了，不能废话连篇。&lt;br&gt;&amp;nbsp;&amp;nbsp;好了，其实就是吐吐槽，练练笔，将心里想的东西记录下来，形成文字。学习的过程就是这样，不断的自我反思与成长。&lt;/p&gt;
-
+          &lt;h2 id=&quot;协议相关资料&quot;&gt;&lt;a href=&quot;#协议相关资料&quot; class=&quot;headerlink&quot; title=&quot;协议相关资料&quot;&gt;&lt;/a&gt;协议相关资料&lt;/h2&gt;&lt;h4 id=&quot;MQTT相关资源整合&quot;&gt;&lt;a href=&quot;#MQTT相关资源整合&quot; class=&quot;headerlink&quot; title=&quot;MQTT相关资源整合&quot;&gt;&lt;/a&gt;MQTT相关资源整合&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;https://laoyur.com/?p=295
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;MQTT协议&quot;&gt;&lt;a href=&quot;#MQTT协议&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
-      <category term="产品日志" scheme="http://imhuzi.net/categories/%E4%BA%A7%E5%93%81%E6%97%A5%E5%BF%97/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>开始python之旅</title>
-    <link href="http://imhuzi.net/2015/09/07/start-python/"/>
-    <id>http://imhuzi.net/2015/09/07/start-python/</id>
-    <published>2015-09-07T15:14:09.000Z</published>
-    <updated>2015-09-09T04:17:38.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="python" scheme="http://imhuzi.net/categories/python/"/>
+      <category term="mqtt" scheme="http://imhuzi.net/categories/mqtt/"/>
     
     
   </entry>
