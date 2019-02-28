@@ -19,6 +19,8 @@ ArrayList  线性表的顺序存储，插入删除元素的时间复杂度为**O
 // -> oldCapacity + oldCapacity/2 相当于 1.5倍
 int newCapacity = oldCapacity + (oldCapacity >> 1);  
 ```
+
+`">>"（移位运算符）：>>1 右移一位相当于除2，右移n位相当于除以 2 的 n 次方。这里 oldCapacity 明显右移了1位所以相当于oldCapacity /2。对于大数据的2进制运算,位移运算符比那些普通运算符的运算要快很多,因为程序仅仅移动一下而已,不去计算,这样提高了效率,节省了资源`
 
 ### 2. 扩容流程
 ensureCapacityInternal(minCapacity) -> calculateCapacity
@@ -37,18 +39,24 @@ private void ensureExplicitCapacity(int minCapacity) {
 ### 3. System.arraycopy 和 Arrays.copyOf 
 两个函数在 ArrayList中大量出现，如在add(index, obj), remove(index),  addAll() , toArray() 等方法中都用了 System.arraycopy方法；Arrays.copyOf 方法，在扩容 和传入 集合的构造函数中使用该方法
 区别： 
+
 ```java
-public static native void arraycopy(Object src,   // 源数组
-										int  srcPos, // copy源数组的起始位置
-                                     Object dest, // 目标数组
-										int destPos, // copy目标数组的起始位置
-                                     int length); // copy length
+public static native void arraycopy(
+            Object src,   // 源数组
+            int  srcPos, // copy源数组的起始位置
+            Object dest, // 目标数组
+            int destPos, // copy目标数组的起始位置
+            int length); // copy length
 ```
+
 实现数组之间的复制（将源数组复制到目标数组），最主要的是可以实现自己复制自己,  
+
 ```java
 public static <T> T[] copyOf(T[] original, int newLength)
 ```
+
 方法返回的数组是新的数组对象，第二个自变量指定要建立的新数组长度，如果新数组的长度超过原数组的长度，则保留数组默认值，其实 copyOf 内部实现
+
 ```java
 public static <T,U> T[] copyOf(U[] original, int newLength, Class<? extends T[]> newType) {
     @SuppressWarnings("unchecked")
@@ -60,8 +68,9 @@ public static <T,U> T[] copyOf(U[] original, int newLength, Class<? extends T[]>
                      Math.min(original.length, newLength));
     return copy;
 }
-```  
+```
+
 ### 4.ensureCapacity方法
 这个方法 ArrayList 内部没有被调用过，所以很显然是提供给用户调用的，那么这个方法有什么作用呢？在 add 大量元素之前用 ensureCapacity 方法，以减少增量重新分配的次数
 
-####总结： 在使用ArrayList时，如果知道数据量大于10时，在创建时就传入 capacity，如果在add大量数据是可以先调用ensureCapacity 进行扩容
+#### 总结： 在使用ArrayList时，如果知道数据量大于10时，在创建时就传入 capacity，如果在add大量数据是可以先调用ensureCapacity 进行扩容
