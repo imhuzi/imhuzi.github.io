@@ -8,10 +8,20 @@ tags:
   - ArrayList
 ---
 
-::ArrayList::  线性表的顺序存储，插入删除元素的时间复杂度为**O（n）**,求表长以及增加元素，取第 i 元素的时间复杂度为**O（1）**。和 Vector 不同，**ArrayList 中的操作不是线程安全的**！所以，建议在单线程中才使用 ArrayList，而在多线程中可以选择 Vector 或者 CopyOnWriteArrayList。
+ArrayList  线性表的顺序存储，插入删除元素的时间复杂度为**O（n）**,求表长以及增加元素，取第 i 元素的时间复杂度为**O（1）**。和 Vector 不同，**ArrayList 中的操作不是线程安全的**！所以，建议在单线程中才使用 ArrayList，而在多线程中可以选择 Vector 或者 CopyOnWriteArrayList。
 问题：
 
-1. 扩容流程：ensureCapacityInternal(minCapacity) -> calculateCapacity
+## 要点：
+以无参数构造方法创建 ArrayList 时，实际上初始化赋值的是一个空数组。当真正对数组进行添加元素操作时，才真正分配容量。即向数组中添加第一个元素时，数组容量扩为10
+
+### 1. 扩容时，容量计算： 
+```java
+// -> oldCapacity + oldCapacity/2 相当于 1.5倍
+int newCapacity = oldCapacity + (oldCapacity >> 1);  
+```
+
+### 2. 扩容流程
+ensureCapacityInternal(minCapacity) -> calculateCapacity
 -> ensureExplicitCapacity(minCapacity) 在该方法中判断是否需要 扩容，之后调用 grow(minCapacity)
 ```java
 private void ensureExplicitCapacity(int minCapacity) {
@@ -23,13 +33,9 @@ private void ensureExplicitCapacity(int minCapacity) {
 }
 ```
 进行扩容
-2. 扩容时，容量计算： 
-```java
-// -> oldCapacity + oldCapacity/2 相当于 1.5倍
-int newCapacity = oldCapacity + (oldCapacity >> 1);  
-```
 
-3. System.arraycopy 和 Arrays.copyOf 两个函数在 ArrayList中大量出现，如在add(index, obj), remove(index),  addAll() , toArray() 等方法中都用了 System.arraycopy方法；Arrays.copyOf 方法，在扩容 和传入 集合的构造函数中使用该方法
+### 3. System.arraycopy 和 Arrays.copyOf 
+两个函数在 ArrayList中大量出现，如在add(index, obj), remove(index),  addAll() , toArray() 等方法中都用了 System.arraycopy方法；Arrays.copyOf 方法，在扩容 和传入 集合的构造函数中使用该方法
 区别： 
 ```java
 public static native void arraycopy(Object src,   // 源数组
@@ -55,5 +61,7 @@ public static <T,U> T[] copyOf(U[] original, int newLength, Class<? extends T[]>
     return copy;
 }
 ```  
+### 4.ensureCapacity方法
+这个方法 ArrayList 内部没有被调用过，所以很显然是提供给用户调用的，那么这个方法有什么作用呢？在 add 大量元素之前用 ensureCapacity 方法，以减少增量重新分配的次数
 
-总结： 在使用ArrayList时，如果知道数据量大于10时，在创建时就传入 capacity，减少后续带来的性能影响
+####总结： 在使用ArrayList时，如果知道数据量大于10时，在创建时就传入 capacity，如果在add大量数据是可以先调用ensureCapacity 进行扩容
