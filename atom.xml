@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://imhuzi.net/"/>
-  <updated>2019-02-28T09:54:04.921Z</updated>
+  <updated>2019-02-28T10:07:16.730Z</updated>
   <id>http://imhuzi.net/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://imhuzi.net/2018/08/01/Java%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0-ArrayList/"/>
     <id>http://imhuzi.net/2018/08/01/Java源码学习-ArrayList/</id>
     <published>2018-08-01T04:14:39.000Z</published>
-    <updated>2019-02-28T09:54:04.921Z</updated>
+    <updated>2019-02-28T10:07:16.730Z</updated>
     
     <summary type="html">
     
@@ -531,11 +531,11 @@
   </entry>
   
   <entry>
-    <title>Vagrant manager</title>
-    <link href="http://imhuzi.net/2015/09/09/Vagrant-manager/"/>
-    <id>http://imhuzi.net/2015/09/09/Vagrant-manager/</id>
+    <title>mqtt资料整理</title>
+    <link href="http://imhuzi.net/2015/09/09/mqtt/"/>
+    <id>http://imhuzi.net/2015/09/09/mqtt/</id>
     <published>2015-09-09T06:14:09.000Z</published>
-    <updated>2015-09-09T11:33:49.000Z</updated>
+    <updated>2015-09-09T04:22:46.000Z</updated>
     
     <summary type="html">
     
@@ -543,14 +543,14 @@
       
         
         
-          &lt;p&gt;发现了一个不错的Vagrant 图形化工具&lt;a href=&quot;http://vagrantmanager.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Vagrant manager&lt;/a&gt;，用来管理 Vagrant boxes，可以快速的在不同环境中切换。不做解释，看图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/images/Vagrant-manager-demo.gif&quot;
+          &lt;h2 id=&quot;协议相关资料&quot;&gt;&lt;a href=&quot;#协议相关资料&quot; class=&quot;headerlink&quot; title=&quot;协议相关资料&quot;&gt;&lt;/a&gt;协议相关资料&lt;/h2&gt;&lt;h4 id=&quot;MQTT相关资源整合&quot;&gt;&lt;a href=&quot;#MQTT相关资源整合&quot; class=&quot;headerlink&quot; title=&quot;MQTT相关资源整合&quot;&gt;&lt;/a&gt;MQTT相关资源整合&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;https://laoyur.com/?p=295
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;MQTT协议&quot;&gt;&lt;a href=&quot;#MQTT协议&quot; class=&quot;headerlink&quot;
         
       
     
     </summary>
     
-      <category term="tools" scheme="http://imhuzi.net/categories/tools/"/>
+      <category term="mqtt" scheme="http://imhuzi.net/categories/mqtt/"/>
     
     
   </entry>
