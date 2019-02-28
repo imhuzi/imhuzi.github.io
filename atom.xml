@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://imhuzi.net/"/>
-  <updated>2018-03-14T06:08:00.744Z</updated>
+  <updated>2019-02-28T09:54:04.921Z</updated>
   <id>http://imhuzi.net/</id>
   
   <author>
@@ -17,11 +17,71 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Java源码学习 ArrayList </title>
+    <link href="http://imhuzi.net/2018/08/01/Java%E6%BA%90%E7%A0%81%E5%AD%A6%E4%B9%A0-ArrayList/"/>
+    <id>http://imhuzi.net/2018/08/01/Java源码学习-ArrayList/</id>
+    <published>2018-08-01T04:14:39.000Z</published>
+    <updated>2019-02-28T09:54:04.921Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;::ArrayList::  线性表的顺序存储，插入删除元素的时间复杂度为&lt;strong&gt;O（n）&lt;/strong&gt;,求表长以及增加元素，取第 i 元素的时间复杂度为&lt;strong&gt;O（1）&lt;/strong&gt;。和 Vector 不同，&lt;strong&gt;ArrayList 中的操作不是线程安全的&lt;/strong&gt;！所以，建议在单线程中才使用 ArrayList，而在多线程中可以选择 Vector 或者 CopyOnWriteArrayList。&lt;br&gt;问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;扩容流程：ensureCapacityInternal(minCapacity) -&amp;gt; calculateCapacity&lt;br&gt;-&amp;gt; ensureExplicitCapacity(minCapacity) 在该方法中判断是否需要 扩容，之后调用 grow(minCapacity)&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="http://imhuzi.net/categories/java/"/>
+    
+    
+      <category term="java" scheme="http://imhuzi.net/tags/java/"/>
+    
+      <category term="源码" scheme="http://imhuzi.net/tags/%E6%BA%90%E7%A0%81/"/>
+    
+      <category term="ArrayList" scheme="http://imhuzi.net/tags/ArrayList/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>戒浮躁 沉淀自己</title>
+    <link href="http://imhuzi.net/2018/07/20/%E6%88%92%E6%B5%AE%E8%BA%81-%E6%B2%89%E6%B7%80%E8%87%AA%E5%B7%B1/"/>
+    <id>http://imhuzi.net/2018/07/20/戒浮躁-沉淀自己/</id>
+    <published>2018-07-20T04:10:34.000Z</published>
+    <updated>2018-07-20T04:31:46.491Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&amp;emsp;&amp;emsp;来北京已有3年，这三年感触颇多，对产品和管理上有些感受，技术上由于所就职的公司产品规模都很小，成长缓慢，原因一部分是氛围影响，一部分在自己。所以现在开始找回自己刚开始工作的前三年的那种拼劲，好好沉淀自己。&lt;/p&gt;
+&lt;p&gt;&amp;emsp;&amp;emsp;关于写博客，从工作开始就已经开始了，但始终没有很好的坚持下来，接下来尽量做到每周至少更新一篇文章，主要涉及：技术，感悟，产品分析等方面。剩下的就是把原来给自己挖坑留下的写作练习补充完整不发布。&lt;/p&gt;
+&lt;p&gt;  关于技术，现在希望能在java方面，把自己训练成专家,同时能对golang深入学习和实践，吃透docker整个技术栈。
+        
+      
+    
+    </summary>
+    
+      <category term="life" scheme="http://imhuzi.net/categories/life/"/>
+    
+    
+      <category term="自省" scheme="http://imhuzi.net/tags/%E8%87%AA%E7%9C%81/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Spring boot Project deploy</title>
     <link href="http://imhuzi.net/2018/03/14/Spring-boot-Project-deploy/"/>
     <id>http://imhuzi.net/2018/03/14/Spring-boot-Project-deploy/</id>
     <published>2018-03-14T04:36:37.000Z</published>
-    <updated>2018-03-14T06:08:00.744Z</updated>
+    <updated>2018-07-19T12:46:27.293Z</updated>
     
     <summary type="html">
     
@@ -30,9 +90,8 @@
         
         
           &lt;p&gt;通过在Vm参数中加: &lt;code&gt;-Dspring.profiles.active=dev&lt;/code&gt; 来指定当前环境的配置文件&lt;/p&gt;
-&lt;p&gt;idea 详细配置过程见 &lt;a href=&quot;docs/构建视频.mp4&quot;&gt;构建教程.mp4&lt;/a&gt;&lt;/p&gt;
 &lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;mvn clen install -Dspring.profiles.active=dev&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h1 id=&quot;deploy&quot;&gt;&lt;a href=&quot;#deploy&quot; class=&quot;headerlink&quot;
+&lt;h1 id=&quot;deploy&quot;&gt;&lt;a href=&quot;#deploy&quot; class=&quot;headerlink&quot; title=&quot;deploy&quot;&gt;&lt;/a&gt;deploy&lt;/h1&gt;&lt;h4 id=&quot;1-maven-插件配置&quot;&gt;&lt;a
         
       
     
@@ -50,7 +109,7 @@
     <link href="http://imhuzi.net/2018/03/14/zsh-Tips/"/>
     <id>http://imhuzi.net/2018/03/14/zsh-Tips/</id>
     <published>2018-03-14T04:01:45.000Z</published>
-    <updated>2018-03-14T04:16:22.672Z</updated>
+    <updated>2018-03-14T04:16:22.673Z</updated>
     
     <summary type="html">
     
@@ -109,7 +168,7 @@
     <link href="http://imhuzi.net/2018/03/10/GitLab-CI-Nodejs/"/>
     <id>http://imhuzi.net/2018/03/10/GitLab-CI-Nodejs/</id>
     <published>2018-03-10T05:44:33.000Z</published>
-    <updated>2018-03-10T11:10:56.785Z</updated>
+    <updated>2018-03-10T11:10:56.786Z</updated>
     
     <summary type="html">
     
@@ -189,7 +248,7 @@
     <link href="http://imhuzi.net/2016/03/28/postgresql-generate_series/"/>
     <id>http://imhuzi.net/2016/03/28/postgresql-generate_series/</id>
     <published>2016-03-28T14:14:23.000Z</published>
-    <updated>2018-03-10T06:03:25.380Z</updated>
+    <updated>2018-03-10T06:03:25.381Z</updated>
     
     <summary type="html">
     
@@ -436,31 +495,6 @@
   </entry>
   
   <entry>
-    <title>mqtt资料整理</title>
-    <link href="http://imhuzi.net/2015/09/09/mqtt/"/>
-    <id>http://imhuzi.net/2015/09/09/mqtt/</id>
-    <published>2015-09-09T06:14:09.000Z</published>
-    <updated>2015-09-09T04:22:46.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;协议相关资料&quot;&gt;&lt;a href=&quot;#协议相关资料&quot; class=&quot;headerlink&quot; title=&quot;协议相关资料&quot;&gt;&lt;/a&gt;协议相关资料&lt;/h2&gt;&lt;h4 id=&quot;MQTT相关资源整合&quot;&gt;&lt;a href=&quot;#MQTT相关资源整合&quot; class=&quot;headerlink&quot; title=&quot;MQTT相关资源整合&quot;&gt;&lt;/a&gt;MQTT相关资源整合&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;https://laoyur.com/?p=295
-&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;MQTT协议&quot;&gt;&lt;a href=&quot;#MQTT协议&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="mqtt" scheme="http://imhuzi.net/categories/mqtt/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>移动开发需要的前端资源</title>
     <link href="http://imhuzi.net/2015/09/09/fd-app/"/>
     <id>http://imhuzi.net/2015/09/09/fd-app/</id>
@@ -517,31 +551,6 @@
     </summary>
     
       <category term="tools" scheme="http://imhuzi.net/categories/tools/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>产品日志-产品文案很重要</title>
-    <link href="http://imhuzi.net/2015/09/08/work-note/"/>
-    <id>http://imhuzi.net/2015/09/08/work-note/</id>
-    <published>2015-09-08T06:14:09.000Z</published>
-    <updated>2015-09-08T07:51:43.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&amp;nbsp;&amp;nbsp;这周主要的工作就是整理，产品文案，针对不同目标用户的ppt，以及市场宣传资料，市场宣传资料老板在8月份就提出了，但是迟迟没出，主要原因：1.身兼多职，产品，前端开发，后端事挺多，2.心静不下来。其实这些说起来和在脑子里想其实很简单，但是在把他们落实成文字确实需要些时间推敲。&lt;br&gt;&amp;nbsp;&amp;nbsp;其实在这个过程中也是让自己重新将公司的整个产品体系，进行梳理，发现问题的一个过程。市场宣传资料文案，和ppt其实和做一个产品一样，需要分析目标用户，结合用户的痛点，再把我们产品的特点结合进去。而且要清晰明了，不能废话连篇。&lt;br&gt;&amp;nbsp;&amp;nbsp;好了，其实就是吐吐槽，练练笔，将心里想的东西记录下来，形成文字。学习的过程就是这样，不断的自我反思与成长。&lt;/p&gt;
-
-        
-      
-    
-    </summary>
-    
-      <category term="产品日志" scheme="http://imhuzi.net/categories/%E4%BA%A7%E5%93%81%E6%97%A5%E5%BF%97/"/>
     
     
   </entry>
