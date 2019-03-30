@@ -73,4 +73,8 @@ public static <T,U> T[] copyOf(U[] original, int newLength, Class<? extends T[]>
 ### 4.ensureCapacity方法
 这个方法 ArrayList 内部没有被调用过，所以很显然是提供给用户调用的，那么这个方法有什么作用呢？在 add 大量元素之前用 ensureCapacity 方法，以减少增量重新分配的次数
 
-#### 总结： 在使用ArrayList时，如果知道数据量大于10时，在创建时就传入 capacity，如果在add大量数据是可以先调用ensureCapacity 进行扩容
+#### 总结 
+
+1. 默认大小为 10，每次扩容是原来容量的1.5倍
+2. 在使用ArrayList时，new时最好传入一个大小，如果没有传在add时会进行扩容处理；
+3. 大量数据时可以先调用ensureCapacity 进行扩容。
