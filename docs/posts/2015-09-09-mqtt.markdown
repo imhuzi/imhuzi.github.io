@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "mqtt资料整理"
+date:   2015-09-09 14:14:09
+categories: mqtt
+---
+
+## 协议相关资料
+
+#### MQTT相关资源整合
+
+	https://laoyur.com/?p=295
+
+#### MQTT协议
+
+	http://www.cnblogs.com/yudar/tag/MQTT/default.html?page=1
+	http://ftp.icpdas.com/pub/beta_version/Wilson/MQtt_SDK/MQtt_intro.pdf
+	http://blog.pandocloud.com/?p=606
+
+## 开源产品
+
+#### emqtt - 开源Erlang MQTT Broker/Client项目介绍
+
+		http://segmentfault.com/a/1190000002809450
+
+#### Android eclipse paho
+
+		http://www.juapk.com/thread-2829-1-1.html
+
+#### MQTT-Node.js实现-Mosca
+
+		http://blog.yuansc.com/2015/01/09/MQTT-Nodejs%E5%AE%9E%E7%8E%B0-Mosca%E7%AE%80%E4%BB%8B/
+
+#### 物联网通信协议介绍
+
+    http://blog.pandocloud.com/?p=810

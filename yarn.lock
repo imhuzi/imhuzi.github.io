@@ -956,7 +956,7 @@
   dependencies:
     katex "^0.15.2"
 
-"@renovamen/vuepress-plugin-md-plus@2.0.0-alpha.5":
+"@renovamen/vuepress-plugin-md-plus@2.0.0-alpha.5", "@renovamen/vuepress-plugin-md-plus@^2.0.0-alpha.5":
   version "2.0.0-alpha.5"
   resolved "https://registry.npmmirror.com/@renovamen/vuepress-plugin-md-plus/-/vuepress-plugin-md-plus-2.0.0-alpha.5.tgz#826e7cffb2a384ede1c7779b0c801ce6f2df1af9"
   integrity sha512-I09mWS+mi3JP0Q4EV7n2lS1eonvqeN/tEotD7gBt3avDy7yOVlwaWTZRmaYgyaDDXKYCQ/h66iOP9T780F4nwg==
@@ -964,7 +964,7 @@
     markdown-it-footnote "^3.0.3"
     markdown-it-mark "^3.0.1"
 
-"@renovamen/vuepress-plugin-mermaid@2.0.0-alpha.20":
+"@renovamen/vuepress-plugin-mermaid@2.0.0-alpha.20", "@renovamen/vuepress-plugin-mermaid@^2.0.0-alpha.20":
   version "2.0.0-alpha.20"
   resolved "https://registry.npmmirror.com/@renovamen/vuepress-plugin-mermaid/-/vuepress-plugin-mermaid-2.0.0-alpha.20.tgz#6468557a4226164ac9cbf25c497b515c4a953411"
   integrity sha512-yFPKKsVv+1Ukixo+iXo8NJg6VaurfKTLwBtOitgFbszQFmAg6dTU0jxYJSttgt3qqYq2xMl6PdnLQeHUXynfjA==
@@ -976,7 +976,7 @@
   resolved "https://registry.npmmirror.com/@renovamen/vuepress-plugin-reading-time/-/vuepress-plugin-reading-time-2.0.0-alpha.10.tgz#475baed03b1d198d52413103f0a6372e1f7e7ef7"
   integrity sha512-bRkNq77ClAzmoBuedi1lOGFKxWbvhHZeAYNR2jGBjWkDUHzPujCyA0lefvogKe/digUz65ylk2+8Cr7JJY05Tw==
 
-"@renovamen/vuepress-plugin-rss@2.0.0-alpha.20":
+"@renovamen/vuepress-plugin-rss@2.0.0-alpha.20", "@renovamen/vuepress-plugin-rss@^2.0.0-alpha.20":
   version "2.0.0-alpha.20"
   resolved "https://registry.npmmirror.com/@renovamen/vuepress-plugin-rss/-/vuepress-plugin-rss-2.0.0-alpha.20.tgz#2c0223abf7e3a4b0b82e1d2ffd7f8664b6e1e214"
   integrity sha512-MNX+5jJSM1XZe95/8cETwdL7n1YTCF//xFJlLYZ8RDJ48yV0ZfKJXDS6W6vEYSpbPgeITRezlWsX9yrEnYoqJQ==
@@ -4433,7 +4433,7 @@ vuepress-plugin-code-enhance@2.0.0-alpha.10:
   resolved "https://registry.npmmirror.com/vuepress-plugin-code-enhance/-/vuepress-plugin-code-enhance-2.0.0-alpha.10.tgz#a39a04798826e3a32ff8d8dc16d9306ab38e1f65"
   integrity sha512-ybib9fOIzEmy1AqmjQ2m/iZKvz/QB35y/SRu2c+GMVGINRLmxMkC0wWuZMYs1/0dRqtqMEaL6vHO/765x5Du9A==
 
-vuepress-plugin-giscus@2.0.0-alpha.20:
+vuepress-plugin-giscus@2.0.0-alpha.20, vuepress-plugin-giscus@^2.0.0-alpha.20:
   version "2.0.0-alpha.20"
   resolved "https://registry.npmmirror.com/vuepress-plugin-giscus/-/vuepress-plugin-giscus-2.0.0-alpha.20.tgz#4d543ccbb8024ac8ea7a1dca59f7a2482fd36403"
   integrity sha512-QjNI16Qeo+y1w+ZN/o7tnhPQTxnuVPXm0NoX3ctIO5O6uKb778JF4cfsWJuk9uz+KGzEYstljYR9TfF9eBmf3w==
