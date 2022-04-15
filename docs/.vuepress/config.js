@@ -44,7 +44,7 @@ module.exports = {
       name: "Huzi Wang",
 
       // 必须：头像，将在首页和移动端侧边栏显示
-      avatar: "/img/avatar.jpeg",
+      avatar: "/img/avatar.png",
 
       // 必须：个人简介，将在首页显示
       description: "🤯 > /dev/null ",
